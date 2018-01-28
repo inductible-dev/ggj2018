@@ -40,13 +40,11 @@
     require.config({
       baseUrl: 'js',
       paths: {
-        phaser: 'phaser.min',
-        howler: 'howler.min',
-        signals: 'signals.min'
+        phaser: 'phaser.min'
       }
     });
 
-    require(["phaser","howler","signals"],function(phaser,howler,signals){
+    require(["phaser"],function(phaser){
       require(["game"]);  
     });
 
